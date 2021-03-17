@@ -9,19 +9,19 @@
         <h5 class="uppercase text-end">Categories</h5>
         <ul class="list-unstyled text-end">
             <li>
-                <a class="text-black text-decoration-none" href="">All Prints</a>
+                <a class="text-black text-decoration-none" href="{% url 'products' %}">All Prints</a>
             </li>
             <li>
-                <a class="text-black text-decoration-none" href="">Black and White</a>
+                <a class="text-black text-decoration-none" href="{% url 'products' %}?category=black_and_white">Black and White</a>
             </li>
             <li>
-                <a class="text-black text-decoration-none" href="">Landscape</a>
+                <a class="text-black text-decoration-none" href="{% url 'products' %}?category=landscape">Landscape</a>
             </li>
             <li>
-                <a class="text-black text-decoration-none" href="">Paint</a>
+                <a class="text-black text-decoration-none" href="{% url 'products' %}?category=paint">Paint</a>
             </li>
             <li>
-                <a class="text-black text-decoration-none" href="">Streetart</a>
+                <a class="text-black text-decoration-none" href="{% url 'products' %}?category=streetart">Streetart</a>
             </li>
         </ul>
     </div>

@@ -67,10 +67,10 @@
                     </a>
                     <ul class="dropdown-menu border-0" aria-labelledby="prints-link">
                         <li><a class="dropdown-item" href="{% url 'products' %}">All Prints</a></li>
-                        <li><a class="dropdown-item" href="">Black and White</a></li>
-                        <li><a class="dropdown-item" href="">Landscape</a></li>
-                        <li><a class="dropdown-item" href="">Paint</a></li>
-                        <li><a class="dropdown-item" href="">Streetart</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=black_and_white">Black and White</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=landscape">Landscape</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=paint">Paint</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=streetart">Streetart</a></li>
                     </ul>
                 </li>
                 <!-- About -->
