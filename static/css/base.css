@@ -53,6 +53,11 @@ ul {
     padding-right: 45%;
 }
 
+.card-body {
+    padding: 0;
+    padding-bottom: 10px;
+}
+
 
 /*------------------------------------- background colours */ 
 .bg-black {

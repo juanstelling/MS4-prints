@@ -3,6 +3,71 @@
         <h2 class="text-black uppercase text-center">Prints</h2>
     </div>
 </div>
-
-
-<div>{{ products }}</div>
+<div class="row pb-3">
+    <!-- navigation to categories -->
+    <div class="col d-none d-lg-block">
+        <h5 class="uppercase text-end">Categories</h5>
+        <ul class="list-unstyled text-end">
+            <li>
+                <a class="text-black text-decoration-none" href="">All Prints</a>
+            </li>
+            <li>
+                <a class="text-black text-decoration-none" href="">Black and White</a>
+            </li>
+            <li>
+                <a class="text-black text-decoration-none" href="">Landscape</a>
+            </li>
+            <li>
+                <a class="text-black text-decoration-none" href="">Paint</a>
+            </li>
+            <li>
+                <a class="text-black text-decoration-none" href="">Streetart</a>
+            </li>
+        </ul>
+    </div>
+    {% if products|length > 0 %}
+        <!-- all products -->
+        <div class="col-12 col-lg-10 products-col">
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card border-0">
+                            {% if product.image %}
+                                <!-- Image of product -->
+                                <a href="">
+                                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                                </a>
+                            {% else %}
+                                <!-- default error image -->
+                                <a href="">
+                                    <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top" alt="no image available">
+                                </a>
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="text-black">{{ product.name }}</h5>
+                                <p class="text-black">${{ product.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <div class="col-10">
+            <div class="row pe-5">
+                <h4 class="uppercase">No search results. Try again</h4>
+            </div>
+        </div>     
+    {% endif %}
+    <!-- Back to top button 
+    <div class="col-12">
+        <div class="row">
+            <div class="btt-button text-start">
+                <a class="btt-link text-black text-center">
+                    <h6 class=""><i class="fas fa-arrow-up"></i> Back to top </h6>   
+                </a>
+            </div>
+        </div>
+    </div>
+    -->
+</div>
