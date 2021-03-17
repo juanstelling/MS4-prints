@@ -1,0 +1,60 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include 'includes/head.html' %}
+        <title>PRNTS. {% block extra_title %}{% endblock %}</title>
+    </head>
+    <body>
+        <header class="container-fluid bg-white">
+            {% include 'includes/free-delivery.html' %}
+            {% include 'includes/mobile-top-header.html' %}  
+            {% include 'includes/header.html' %}                 
+        </header>
+
+        {% if messages %}
+            <div class="toast-container">
+                {% for message in messages %}
+                    {% with message.level as level %}
+                        {% if level == 40 %}
+                            {% include 'includes/toasts/error_toast.html' %}
+                        {% elif level == 30 %}
+                            {% include 'includes/toasts/warning_toast.html' %}
+                        {% elif level == 25 %}
+                            {% include 'includes/toasts/succes_toast.html' %}
+                        {% else %}
+                            {% include 'includes/toasts/info_toast.html' %}
+                        {% endif %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <main class="container-fluid">
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            {% include 'includes/footer.html' %}
+        </footer>
+
+        {% block postloadjs %}
+        <script type="text/javascript">
+            var option = 
+            {
+                animation: true,
+                autohide: true,
+                delay: 4000,
+            }
+
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function (toastEl) {
+                    return new bootstrap.Toast(toastEl, option)
+                })
+            toastList.forEach(toast => toast.show());
+        </script>
+        {% endblock %}
+    </body>
+</html>
