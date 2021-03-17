@@ -3,6 +3,20 @@
         <h2 class="text-black text-uppercase text-center">Prints</h2>
     </div>
 </div>
+<!-- Sorting by -->
+<div class="row pb-2 ">
+    <div class="col products-col">
+        <div class="text-end">
+            <select id="sort-selector" class="custom-select-sm border" aria-label="Default select example">
+                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sorting by</option>
+                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price | low to high</option>
+                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price | high to low </option>
+                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name | A - Z</option>
+                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name | Z - A</option>
+            </select>
+        </div>   
+    </div>
+</div> 
 <div class="row pb-3">
     <!-- navigation to categories -->
     <div class="col d-none d-lg-block">
@@ -59,15 +73,15 @@
             </div>
         </div>     
     {% endif %}
-    <!-- Back to top button 
+    <!-- Back to top button  -->
     <div class="col-12">
         <div class="row">
             <div class="btt-button text-start">
                 <a class="btt-link text-black text-center">
-                    <h6 class=""><i class="fas fa-arrow-up"></i> Back to top </h6>   
+                    <h6><i class="fas fa-arrow-up"></i> Back to top </h6>   
                 </a>
             </div>
         </div>
     </div>
-    -->
+
 </div>

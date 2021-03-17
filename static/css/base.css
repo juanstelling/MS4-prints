@@ -107,6 +107,22 @@ ul {
     border-radius: 0px;
 }
 
+.btt-button,
+.update-link, 
+.remove-item {
+    cursor: pointer;
+}
+
+.btt-button {
+    padding-right: calc(var(--bs-gutter-x)/ 2); 
+    background-color: #fff;
+    border-radius: 10px;;
+    position: fixed;
+    width: 130px;
+    bottom: 15px;
+    right: 15px;
+}
+
 /*------------------------------------- Caption in images */ 
 .carousel-caption {
     position: absolute;
