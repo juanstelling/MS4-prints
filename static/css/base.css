@@ -93,6 +93,11 @@ ul {
     width: 400px;
 }
 
+.bag-img {
+    height: 80px;
+    width: 120px;
+}
+
 /* -------------------------------- Buttons / links  */
 .btn-black {
     background: #000;
