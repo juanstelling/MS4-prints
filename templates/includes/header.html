@@ -1,0 +1,87 @@
+<!-- Top icons right  -->
+<div class="row my-auto d-none d-lg-flex">
+    <div class="col-12 my-1 text-end">
+        <ul class="list-inline list-unstyled">
+            <!-- Search functionality -->
+            <li class="list-inline-item">  
+                <form method="GET" action="">
+                    <input class="searchbar" type="text" name="q" placeholder="Search">
+                    <button class="searchbutton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </li>
+            <!-- Account -->
+            <li class="list-inline-item dropdown">
+                <a class="text-black" href="#" role="button" id="account-dropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="icons">
+                        <i class="fas fa-user fa-lg"></i>
+                    </div>  
+                </a>
+                <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                            <a href="" class="dropdown-item">Add Product</a>
+                        {% endif %}
+                        <a href="" class="dropdown-item">My Account</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                    {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                    {% endif %}
+                </div>
+            </li>
+            <!-- Shopping bag -->
+            <li class="list-inline-item">
+                <a class="nav-link text-black" href="">
+                    <div class="icons">
+                        <i class="fas fa-shopping-bag fa-lg"></i>
+                        {% if grand_total %}
+                            ${{ grand_total|floatformat:2 }}
+                        {% else %}
+                            $0.00
+                        {% endif %}             
+                    </div>
+                </a>
+            </li>
+        </ul>  
+    </div>
+</div>
+<!-- Logo -->
+<div class="row my-auto d-none d-lg-flex">
+    <a href="{% url 'home' %}" class="nav-link text-center">
+        <h1 class="text-uppercase text-black display-4">prnts.</h1>
+    </a> 
+</div>
+<!-- main nav -->
+<div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav mx-auto">
+                <!-- Prints -->
+                <li class="nav-item dropdown">
+                    <a class="text-uppercase nav-link text-black " href="#" id="prints-link" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <h4>Prints</h4>
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="prints-link">
+                        <li><a class="dropdown-item" href="">All Prints</a></li>
+                        <li><a class="dropdown-item" href="">Black and White</a></li>
+                        <li><a class="dropdown-item" href="">Landscape</a></li>
+                        <li><a class="dropdown-item" href="">Paint</a></li>
+                        <li><a class="dropdown-item" href="">Streetart</a></li>
+                    </ul>
+                </li>
+                <!-- About -->
+                <li class="nav-item">
+                    <a class="nav-link active text-uppercase text-black" aria-current="page" href=""><h4>About</h4></a>
+                </li>
+                <!-- Sustainability -->
+                <li class="nav-item">
+                    <a class="nav-link active text-uppercase text-black" aria-current="page" href=""><h4>Sustainability</h4></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
