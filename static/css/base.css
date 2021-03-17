@@ -7,7 +7,7 @@ body {
     position: relative;
     min-height: 100vh;
     font-family: 'Oswald';
-    padding-bottom: 200px;
+    padding-bottom: 240px;
 }
 
 footer {
@@ -40,6 +40,19 @@ ul {
     font-size: 15px;
 }
 
+.usp-icons {
+    font-size: 50px;
+}
+
+.about-padding-l {
+    padding-left: 45%;
+
+}
+
+.about-padding-r {
+    padding-right: 45%;
+}
+
 
 /*------------------------------------- background colours */ 
 .bg-black {
@@ -48,6 +61,10 @@ ul {
 
 .bg-grey {
     background-color: #1A1A1A;
+}
+
+.bg-brown {
+    background-color: #CDBB8D;
 }
 
 /*------------------------------------- Text colours */ 
@@ -59,6 +76,25 @@ ul {
 .carousel-img {
     width: 100%;
     height: 450px;
+}
+
+.about-img {
+    height: 400px;
+    width: 400px;
+}
+
+/* -------------------------------- Buttons / links  */
+.btn-black {
+    background: #000;
+    color: white !important;
+    border: 1px solid #000;
+    border-radius: 0px;
+}
+
+.btn-black:hover {
+    background: #171717;
+    border: 1px solid #171717;
+    border-radius: 0px;
 }
 
 /*------------------------------------- Caption in images */ 
@@ -92,4 +128,54 @@ ul {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* media queryies for iphone 5/6/7/8 plus */
+@media screen and (max-width: 414px) {
+    h4 {
+       font-size: 20px;
+    }
+    .searchbar {
+        width: 50px;   
+    }
+    .carousel-img {
+        height: 300px;
+    }
+    .about-img {
+        height: 300px;
+        width: 300px;
+    }
+    .icons {
+        font-size: 10px;
+
+    }
+}
+
+/* media queryies for iphone ipad*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-img {
+        height: 300px;
+        width: 300px;
+    }
 }
