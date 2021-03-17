@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col pt-4">
-        <h2 class="text-black uppercase text-center">Prints</h2>
+        <h2 class="text-black text-uppercase text-center">Prints</h2>
     </div>
 </div>
 <div class="row pb-3">
@@ -34,12 +34,12 @@
                         <div class="card border-0">
                             {% if product.image %}
                                 <!-- Image of product -->
-                                <a href="">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                                 </a>
                             {% else %}
                                 <!-- default error image -->
-                                <a href="">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top" alt="no image available">
                                 </a>
                             {% endif %}

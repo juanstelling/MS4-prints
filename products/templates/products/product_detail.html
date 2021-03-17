@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}| PRODUCTS {% endblock %}
+
+{% block content %}
+    {% include 'products/includes/productdetails.html' %}
+    {% include 'includes/usp.html' %}
+    {% include 'includes/cta-products.html' %}
+{% endblock %}
+

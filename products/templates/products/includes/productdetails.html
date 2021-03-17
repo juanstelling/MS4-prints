@@ -1,0 +1,36 @@
+<div class="row py-4">
+    <div class="col">
+        <h1 class="text-black text-center fw-bold">{{ product.name }}</h1>
+    </div>
+</div>
+<div class="row px-5 pb-2">
+    <div class="col">
+        <a class="text-black" href="{% url 'products' %}"><h6>< Go back to all prints</h6></a>
+    </div>
+</div>
+<div class="row pb-4 px-5">
+    <!-- Image -->
+    <div class="col-12 col-md-6 col-lg-6">
+        {% if product.image %}
+            <!-- Image of product -->
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+        {% else %}
+            <!-- default error image -->
+            <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top" alt="no image available">
+        {% endif %}
+    </div>
+    <!-- Product details -->
+    <div class="col-12 col-md-6 col-lg-6">
+        <h5 class="fw-bolder text-uppercase">{{ product.category.friendly_name }}</h5>
+        {% if product.in_stock%}
+            <h5 class="text-uppercase text-success"><i class="fas fa-check-circle"></i> In stock</h5>
+        {% else %}
+            <h5 class="text-uppercase text-danger">Sold out</h5>
+        {% endif %}
+        <h3 class="py-4">${{ product.price }}</h3>     
+    </div>
+</div>
+<div class="row pb-4 px-5">
+    <h6 class="text-black text-uppercase">Product description </h6>
+    <p>{{ product.description }}</p>
+</div>
