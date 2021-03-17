@@ -46,6 +46,10 @@ ul {
     background-color: #000 !important;
 }
 
+.bg-grey {
+    background-color: #1A1A1A;
+}
+
 /*------------------------------------- Text colours */ 
 .text-black {
     color: #000 !important;
