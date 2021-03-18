@@ -44,6 +44,10 @@ ul {
     font-size: 50px;
 }
 
+.custom-col {
+    height: 90%;
+}
+
 .about-padding-l {
     padding-left: 45%;
 
