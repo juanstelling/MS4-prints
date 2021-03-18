@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}| CHECKOUT SUCCES {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block content %}
+    {% include 'checkout/includes/checkout_success_section.html' %}
+    {% include 'includes/cta-products.html' %}
+{% endblock %}
