@@ -1,0 +1,46 @@
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 10px 12px;
+  border: 1px solid #cfd7df;
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+#payment-form input::placeholder {
+    color: #6b6b6b;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #6b6b6b !important;
+}
+
+.fieldset-label {
+    position: relative;
+}
+
+.form-control {
+    margin: 10px 0px;
+    border: 1px solid #cfd7df;
+    color: #000;
+}
+
+.form-control:focus {
+    border-color: #CDBB8D;
+}
