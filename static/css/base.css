@@ -158,6 +158,18 @@ ul {
     padding: 10px 30px;
 }
 
+/* -------------------------------- Toast messages  */
+.toast-container {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index:  99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
 /*------------------------------------- Searchbar */ 
 .searchbar {
     font-size: 15px;
@@ -214,6 +226,9 @@ input[name='q']::placeholder {
     .icons {
         font-size: 10px;
 
+    }
+    .toast-container {
+        left: 17%;
     }
 }
 

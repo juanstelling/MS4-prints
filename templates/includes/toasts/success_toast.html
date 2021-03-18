@@ -1,0 +1,50 @@
+<div class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+        <strong class="me-auto text-success"><i class="fas fa-check"></i> Succes!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <hr class="text-black">
+            </div>
+        </div>
+        {% if grand_total and not on_profile_page %}
+            <p class=" text-black py-1">Your Bag ({{ product_count }})</p>
+            {% for item in bag_items %}
+                <div class="row">
+                    <div class="col-3 my-1">
+                        {% if item.product.image %}
+                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        {% else %}
+                            <img class="w-100" src="https://res.cloudinary.com/dmv5hano3/image/upload/v1614331897/media/image_not_available_tbyeou.png">
+                        {% endif %}
+                    </div>
+                    <div class="col-9">
+                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="row">
+                <div class="col text-end">
+                    <strong>
+                        <p class="mt-2 text-black">
+                            Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                            <span class="float-right">${{ total|floatformat:2 }}</span>
+                        </p>
+                    </strong>
+                    {% if free_delivery_delta > 0 %}
+                        <p class="mb-1 text-primary">
+                            Spend ${{ free_delivery_delta }} more to get free next day delivery!
+                        </p>
+                    {% endif %}
+                    <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
+                        <span class="text-uppercase">Go to shoppingbag</span>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
