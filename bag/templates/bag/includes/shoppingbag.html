@@ -1,3 +1,5 @@
+{% load bag_tools %}
+
 <div class="row">
     <div class="col pt-4">
         <h2 class="text-black text-uppercase text-center" >Shopping bag</h2>
@@ -68,7 +70,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </td>
                                 <td>
                                     <a class="remove-item float-right" id="remove_{{ item.item_id }}"><i
