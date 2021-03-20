@@ -162,6 +162,13 @@ ul {
     padding: 10px 30px;
 }
 
+
+/* -------------------------------- Input fields  */
+.input-group-prepend,
+.input-group-append {
+    margin: 10px 0px;
+}
+
 /* -------------------------------- Toast messages  */
 .toast-container {
     position: fixed;
