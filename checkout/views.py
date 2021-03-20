@@ -54,7 +54,6 @@ def checkout(request):
                 reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There is an error with the form')
-
     else:
         bag = request.session.get('bag', {})
         if not bag:
