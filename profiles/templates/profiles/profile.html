@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}| MY PROFILE {% endblock %}
+
+{% block content %}
+    {% include 'profiles/includes/user_profile.html' %}
+    {% include 'includes/cta-products.html' %}
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/country.js' %}"></script>
+{% endblock %}
