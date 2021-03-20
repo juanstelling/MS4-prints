@@ -132,6 +132,11 @@ ul {
     right: 15px;
 }
 
+.btn-modal {
+    padding: 0;
+    padding-bottom: 3px;
+}
+
 /*------------------------------------- Caption in images */ 
 .carousel-caption {
     position: absolute;
