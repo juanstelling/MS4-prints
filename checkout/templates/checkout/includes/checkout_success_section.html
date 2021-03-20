@@ -1,18 +1,20 @@
+{% if not from_profile %}
 <div class="row">
     <div class="col pt-4">
         <h2 class="text-black text-uppercase text-center">Thanks for your purchase!</h2>
     </div>
 </div>
+{% endif %}
 <div class="row pt-5 px-5 pb-5">
     <!-- Thank you info -->
     <div class="col-12 col-lg-6 col-lx-6 ps-5 pb-5">
         {% if not from_profile %}
             <h4 class="pb-3">We'll email <strong>{{ order.email }} </strong>with the order confirmation with details and tracking info.</h4>
-            <a href="{% url 'products' %}" class="btn btn-black rounded-0">
+            <a href="{% url 'products' %}" class="btn btn-black ">
                 <span class="text-uppercase fw-bold">Continue shopping</span>
             </a>
         {% else %}
-            <a href="{% url 'profile' %}" class="btn btn-black rounded-0 float-end">
+            <a href="{% url 'profile' %}" class="btn btn-black">
                 <span class="text-uppercase fw-bold">Go back to profile</span>
             </a>
         {% endif %}

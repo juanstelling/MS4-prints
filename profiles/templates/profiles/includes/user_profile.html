@@ -28,6 +28,41 @@
         </form>
     </div>    
 </div>
-<div class="row">
-    {{ orders }}
+<div class="row px-5 py-2">
+    <div class="col-12">
+        <p class="text-black text-uppercase pe-1">Order History</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Order Number</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Prints</th>
+                    <th scope="col">Order Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <th>
+                            <a class="text-black" href="{% url 'order_history' order.order_number %}"
+                                title="{{ order.order_number }}">
+                                {{ order.order_number|truncatechars:8 }}
+                            </a>
+                        </th>
+                        <td>{{ order.date }}</td>
+                        <td>
+                            <ul class="list-unstyled">
+                                {% for item in order.lineitems.all %}
+                                <li>
+                                    {{ item.product.name }} x {{ item.quantity }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                        <td>${{ order.grand_total }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
