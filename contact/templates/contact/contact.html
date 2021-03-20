@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}| CONTACT US {% endblock %}
+
+{% block content %}
+    {% include 'contact/includes/get_in_contact.html' %}
+    {% include 'includes/usp.html' %}
+    {% include 'includes/cta-products.html' %}  
+{% endblock %}
