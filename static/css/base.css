@@ -137,6 +137,17 @@ ul {
     padding-bottom: 3px;
 }
 
+/* -------------------------------- Input fields  */
+.input-group-prepend,
+.input-group-append {
+    margin: 10px 0px;
+}
+
+input#email {
+    border: 0px;
+    border-bottom: 3px solid black;
+}
+
 /*------------------------------------- Caption in images */ 
 .carousel-caption {
     position: absolute;
@@ -168,11 +179,6 @@ ul {
 }
 
 
-/* -------------------------------- Input fields  */
-.input-group-prepend,
-.input-group-append {
-    margin: 10px 0px;
-}
 
 /* -------------------------------- Toast messages  */
 .toast-container {
