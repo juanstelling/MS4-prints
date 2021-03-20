@@ -63,10 +63,11 @@
             </div>
             <fieldset class="px-3 pt-3">
                 <legend class="text-uppercase">Payment</legend>
-                <!-- stripe card element will go here -->
+                <!-- Stripe element -->
                 <div id="card-element"></div>
-                <!-- used to display forms errors -->
+                <!-- Form errors -->
                 <div class="text-danger" id="card-errors" role="alert"></div>
+                <input type="hidden" value="{{ client_secret }}" name="client_secret">
             </fieldset>
             <!-- Sumbit -->
             <div class="submit-button text-end mt-5 mb-2 px-3">
