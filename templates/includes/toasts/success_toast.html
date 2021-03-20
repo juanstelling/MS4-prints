@@ -18,7 +18,7 @@
                         {% if item.product.image %}
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                         {% else %}
-                            <img class="w-100" src="https://res.cloudinary.com/dmv5hano3/image/upload/v1614331897/media/image_not_available_tbyeou.png">
+                            <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top bag-img" alt="no image available">
                         {% endif %}
                     </div>
                     <div class="col-9">

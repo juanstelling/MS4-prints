@@ -27,7 +27,7 @@
                                     {% if item.product.image %}
                                         <img class="bag-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                     {% else %}
-                                        <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top" alt="no image available">
+                                        <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top bag-img" alt="no image available">
                                     {% endif %}
                                 </td>
                                 <td>
