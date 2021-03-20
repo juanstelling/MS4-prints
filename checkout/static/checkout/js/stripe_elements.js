@@ -99,7 +99,7 @@ form.addEventListener('submit', function(ev) {
             }
         });
     }).fail(function() {
-        // Rload page, the error will be in django messages
+        // just reload page, the error will be in django messages
         location.reload();
     })   
 });
