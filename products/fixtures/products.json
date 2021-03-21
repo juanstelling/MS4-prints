@@ -9,7 +9,7 @@
             "price": 19.95,
             "category": 1,
             "image": "girl_in_desert.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/girl_in_desert.jpg",
             "in_stock": "True"
         }
     },
@@ -23,7 +23,7 @@
             "price": 23.95,
             "category": 3,
             "image": "abstract092.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/abstract092.jpg",
             "in_stock": "False"
         }
     },
@@ -37,7 +37,7 @@
             "price": 17.95,
             "category": 2,
             "image": "on_top_of_the_mountain.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/on_top_of_the_mountain.jpg",
             "in_stock": "True"
         }
     },
@@ -51,7 +51,7 @@
             "price": 19.95,
             "category": 2,
             "image": "antelope-canyon.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/antelope-canyon.jpg",
             "in_stock": "True"
         }
     },
@@ -65,7 +65,7 @@
             "price": 23.95,
             "category": 3,
             "image": "marmer.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/marmer.jpg",
             "in_stock": "True"
         }
     },
@@ -79,7 +79,7 @@
             "price": 17.95,
             "category": 4,
             "image": "man_in_colour.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/man_in_colour.jpg",
             "in_stock": "True"
         }
     },
@@ -93,7 +93,7 @@
             "price": 17.95,
             "category": 1,
             "image": "sunglasses.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/sunglasses.jpg",
             "in_stock": "True"
         }
     },
@@ -107,7 +107,7 @@
             "price": 17.95,
             "category": 4,
             "image": "lips.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/lips.jpg",
             "in_stock": "True"
         }
     },
@@ -121,7 +121,7 @@
             "price": 19.95,
             "category": 2,
             "image": "trees_and_bird.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/trees_and_bird.jpg",
             "in_stock": "True"
         }
     },
@@ -135,7 +135,7 @@
             "price": 23.95,
             "category": 3,
             "image": "white.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/white.jpg",
             "in_stock": "True"
         }
     },
@@ -149,7 +149,7 @@
             "price": 19.95,
             "category": 4,
             "image": "tunnel.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/tunnel.jpg",
             "in_stock": "True"
         }
     },
@@ -163,7 +163,7 @@
             "price": 23.95,
             "category": 2,
             "image": "rivers.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/rivers.jpg",
             "in_stock": "True"
         }
     },
@@ -177,7 +177,7 @@
             "price": 17.95,
             "category": 1,
             "image": "building.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/building.jpg",
             "in_stock": "True"
         }
     },
@@ -191,7 +191,7 @@
             "price": 23.95,
             "category": 3,
             "image": "red_dot.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/red_dot.jpg",
             "in_stock": "True"
         }
     },
@@ -205,7 +205,7 @@
             "price": 17.95,
             "category": 4,
             "image": "man_with_beard.jpg",
-            "image_url": "",
+            "image_url": "https://prnts.s3.eu-west-3.amazonaws.com/media/man_with_beard.jpg",
             "in_stock": "True"
         }
     }
