@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
     'newsletter',
     'contact',
+    'pages',
 
     # External apps
     'crispy_forms',
