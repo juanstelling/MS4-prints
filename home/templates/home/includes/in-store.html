@@ -3,3 +3,36 @@
         <h2 class="text-uppercase text-center text-black">In store</h2>
     </div>
 </div>
+<div class="row">
+    <div class="col-12 col-lg-12 px-5">
+        <div class="row">
+            {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card border-0">
+                        {% if product.image %}
+                            <!-- Image of product -->
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                            </a>
+                        {% else %}
+                            <!-- default error image -->
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img src="https://res.cloudinary.com/dmv5hano3/image/upload/v1614331897/media/image_not_available_tbyeou.png" class="card-img-top" alt="...">
+                            </a>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="text-black">{{ product.name }}</h5>
+                            <p class="text-black">${{ product.price }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div> 
+    <!-- Button to all products -->
+    <div class="col-12 text-center pb-5">
+        <button class="btn btn-black rounded-0">
+            <a class="text-white uppercase text-decoration-none" href="{% url 'products' %}?page=1">View all products</a>
+        </button>
+    </div> 
+</div>
