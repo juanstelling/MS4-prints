@@ -102,6 +102,11 @@ ul {
     width: 120px;
 }
 
+.sus-img {
+    height: 300px;
+    width: 300px;
+}
+
 /* -------------------------------- Buttons / links  */
 .btn-black {
     background: #000;
