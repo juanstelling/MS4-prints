@@ -44,7 +44,7 @@
         <!-- My Pages -->
         <div class="col py-4 d-none d-lg-flex">
             <ul class="list-unstyled">
-                <li class="uppercase text-white">My Pages</li>
+                <li class="text-uppercase text-white">My Pages</li>
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <li>
@@ -71,7 +71,7 @@
         <!-- Customer Care -->
         <div class="col py-4">
             <ul class="list-unstyled">
-                <li class="uppercase text-white">Customer care</li>
+                <li class="text-uppercase text-white">Customer care</li>
                 <li>
                     <a class="text-white text-decoration-none" href="{% url 'faq' %}">FAQ</a>
                 </li>

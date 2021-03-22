@@ -77,7 +77,7 @@ ul {
 }
 
 .bg-image {
-    background: url("/media/marmer.jpg");
+    background: url("https://prnts.s3.eu-west-3.amazonaws.com/media/marmer.jpg");
     height: 300px;
 }
 
@@ -100,11 +100,6 @@ ul {
 .bag-img {
     height: 80px;
     width: 120px;
-}
-
-.sus-img {
-    height: 300px;
-    width: 300px;
 }
 
 /* -------------------------------- Buttons / links  */
@@ -140,6 +135,15 @@ ul {
 .btn-modal {
     padding: 0;
     padding-bottom: 3px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #e0d2ae;
+}
+
+.accordion-button:focus {
+    border: 0px;
 }
 
 /* -------------------------------- Input fields  */
@@ -323,12 +327,15 @@ input:-internal-autofill-selected {
         font-size: 10px;
 
     }
+    .custom-toast {
+        max-width: 80%;
+    }
     .toast-container {
         left: 17%;
     }
 }
 
-/* media queryies for iphone ipad*/
+/* media queryies for iPad */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .about-img {
         height: 300px;
