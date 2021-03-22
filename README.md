@@ -82,7 +82,7 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
 
 ### 1.5 User stories 
 
-**visitor goals:**
+**Visitor goals:**
 1. As a visitor, I want to access the website from any device, so that I can go to the website on desktop, mobile and tablet. 
 2. As a visitor, I want to be able to navigate easily through the website, so I can find everything easily. 
 3. As a visitor, I want to access the social media accounts of the company, so I can follow them and see the latest trends and news. 
@@ -113,7 +113,7 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
 21. As a returning consumer, I want to reset/change my password (if I forgot it), so I can get access to my profile. 
 22. As a returning consumer, I want to be able to change my email, so I can have access to the profile with another email address. 
 
-**Returning consumer goals:** 
+**Admin goals:** 
 
 23. As admin, I want to add, modify and delete products, so I manage the assortment of all products on the website. 
 
@@ -152,7 +152,7 @@ Click on the links below to see the mockups in Figma.
 
 <span id="information-architecture"></span>
 
-<h1>2. Information Architecture TO-DO</h1>
+<h1>2. Information Architecture</h1>
 
 <span id="database"></span>
 
@@ -246,14 +246,6 @@ Click on the links below to see the mockups in Figma.
 --- | --- | --- | --- 
  Email | email| EmailField | max_length=255
  Timestamp | timestamp | DateTimeField | auto_now_add=True
-
-
-
-
-
-
-
-
 
 <span id="features"></span>
 
@@ -363,16 +355,16 @@ The website is classified by 8 applications: home, about, products, checkout, pr
 - There is a **cta section to all products**.
 
 #### 14. Django-Allauth features 
-- Sign up
+- **Sign up**
     - Users can create a new account by filling in a from where the user have to fillin a email, username, password and password confirmation. If the info already exists there will be a message that he/she already has an account. The user can submit the form when the data is new. A verification email is sent to the user.
-- login
+- **Login**
     - Users can login with their username ans password. There is also a link to change the password, if the user is forgotten it. 
-- Forgot password 
+- **Forgot password**
     - A user can reset their password. 
-- Logout 
+- **Logout** 
     - The user can logout by clicking the logout link. After clicking the link there wil a confirmation if the user is sure to logout. 
 
-#### 15. error pages 
+#### 15. Error pages 
 - There are custom error handling pages with short information about the error. The errors are displayed in the style of the website. 
 - The following errors are included: 400, 403, 404 and 500.
 
@@ -474,8 +466,8 @@ The testing process can be found [here](TESTING.md).
 - Heroku account
 - An IDE of choice 
 - Stripe account
-- A AWS Amazon account
-- A Gmail account
+- AWS Amazon account
+- Gmail account
 
 #### Clone the project 
 To make a local clone, follow the following steps. 
@@ -488,6 +480,7 @@ To make a local clone, follow the following steps.
 2. Set up the environment variables: 
     - Create a `.gitignore` file in the root directory of the project. 
     - Create a `.env` file. This will contain the following environment variables:
+
     ```
     Import os
     os.environ("SECRET_KEY", "Added by developer")
@@ -541,6 +534,7 @@ To make a local clone, follow the following steps.
 
 3. Set up Database
     - Copy the **DATABASE_URL** (Postgres URL) from the config variables of Heroku and past it into the default database in `setting.py`
+
     ```
     DATABASES = {
         'default': dj_database_url.parse("<DATABASE_URL here>")
@@ -558,6 +552,7 @@ To make a local clone, follow the following steps.
         - Enter your username, email and password.
     - Now you can remove the DATABASE_URL from `settings.py` and set the 'old' default DATABSE settings.
     - Adjust the ALLOWED_HOSTS in you settings.py with the following:
+    
     ```
     ALLOWED_HOSTS = ['<your Heroku app URL>', 'localhost]
     ```
