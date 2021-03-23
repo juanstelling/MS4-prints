@@ -39,7 +39,7 @@ def email_list_signup(request):
             email_subscribe_qs = Subscribe.objects.filter(
                 email=form.instance.email)
             if email_subscribe_qs.exists():
-                messages.error(request, "Your are already subscribed! or not")
+                messages.error(request, "Your are already subscribed!")
             else:
                 subscribe(form.instance.email)
                 form.save()
