@@ -17,7 +17,7 @@
                         {% else %}
                             <!-- default error image -->
                             <a href="{% url 'product_detail' product.id %}">
-                                <img src="https://res.cloudinary.com/dmv5hano3/image/upload/v1614331897/media/image_not_available_tbyeou.png" class="card-img-top" alt="...">
+                                <img src="{{ MEDIA_URL }}not_available.jpg" class="card-img-top bag-img" alt="no image available">
                             </a>
                         {% endif %}
                         <div class="card-body">
