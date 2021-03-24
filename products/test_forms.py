@@ -7,7 +7,7 @@ class TestProductForm(TestCase):
     def test_product_form_is_required(self):
         form = ProductForm({
             'name': '',
-            'description': '',
+            'descripton': '',
             'price': '',
             })
         self.assertFalse(form.is_valid())

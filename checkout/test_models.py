@@ -206,11 +206,3 @@ class TestOrderLineItemModel(TestCase):
         orderitem = OrderLineItem.objects.get(id=1)
         max_digits = orderitem._meta.get_field('lineitem_total').max_digits
         self.assertEqual(max_digits, 6)
-
-
-
-
-
-
-
-
