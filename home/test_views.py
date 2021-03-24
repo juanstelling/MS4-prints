@@ -1,9 +1,10 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
+from django.urls import reverse, resolve
+from .views import index
 
 
-class TestHomeViews(TestCase):
+class TestPagesViews(SimpleTestCase):
 
-    def test_get_home_page(self):
-        response = self.client.get('/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'home/index.html')
+    def test_view_index_resolves(self):
+        url = reverse('home')
+        self.assertEqual(resolve(url).func, index)

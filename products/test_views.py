@@ -9,8 +9,15 @@ class TestProfilesViews(SimpleTestCase):
         url = reverse('products')
         self.assertEqual(resolve(url).func, all_products)
 
+    def test_view_product_detail_resolves(self):
+        url = reverse('product_detail', args=['product_id'])
+        self.assertEqual(resolve(url).func, product_detail)
+
     def test_view_add_product_resolves(self):
         url = reverse('add_product')
         self.assertEqual(resolve(url).func, add_product)
+
+
+
 
 

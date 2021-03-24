@@ -194,7 +194,7 @@ Click on the links below to see the mockups in Figma.
  Sku number | sku | CharField | max_length=40, null=True, blank=True
  Name| name | CharField | max_length=250
  Description| description | TextField |
- Price | price | DecimalField | max_digits=5, decimal_places=2
+ Price | price | DecimalField | max_digits=5, decimal_places=2, null=False, default=0
  Image | image | ImageField | null=True, blank=True
  Image url | image_url | URLField | max_length=1024, null=True, blank=True
  In stock | in_stock | BooleanField | default=True

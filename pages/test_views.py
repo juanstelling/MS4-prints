@@ -1,26 +1,22 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
+from django.urls import reverse, resolve
+from .views import company, sustainability, faq, return_policy
 
 
-class TestPagesViews(TestCase):
+class TestPagesViews(SimpleTestCase):
 
-    """ All pages view testing  """
+    def test_view_company_resolves(self):
+        url = reverse('company')
+        self.assertEqual(resolve(url).func, company)
 
-    def test_comapny_view(self):
-        response = self.client.get('/company/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/company.html')
+    def test_view_sustainability_resolves(self):
+        url = reverse('sustainability')
+        self.assertEqual(resolve(url).func, sustainability)
 
-    def test_sustainability_view(self):
-        response = self.client.get('/sustainability/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/sustainability.html')
+    def test_view_faq_resolves(self):
+        url = reverse('faq')
+        self.assertEqual(resolve(url).func, faq)
 
-    def test_faq_view(self):
-        response = self.client.get('/faq/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/faq.html')
-
-    def test_return_policy_view(self):
-        response = self.client.get('/return-policy/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/return_policy.html')
+    def test_view_return_policy_resolves(self):
+        url = reverse('return_policy')
+        self.assertEqual(resolve(url).func, return_policy)
