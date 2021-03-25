@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*-------------------------------------Special paddings/margins/text/sizes */ 
 html {
     height: 100%;
@@ -162,6 +169,8 @@ input#email {
     position: absolute;
     min-width: 30%;
     max-width: 80%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     right: 20%;
     left: 15%;
@@ -177,6 +186,8 @@ input#email {
     position: relative;
     min-width: 30%;
     max-width: 80%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     left: 10%;
     top: 50%;
@@ -214,11 +225,47 @@ input#email {
     background-color: #fff;
 }
 
+input[name='q']::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-moz-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-ms-input-placeholder {
+    color: #aab7c4;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
 
 /* -------------------------------- Allauth formatting  */
+
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    margin-top: 1.5rem;
+    color: #6b6b6b; 
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    margin-top: 1.5rem;
+    color: #6b6b6b; 
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    margin-top: 1.5rem;
+    color: #6b6b6b; 
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    margin-top: 1.5rem;
+    color: #6b6b6b; 
+}
 
 .allauth-form-inner-content p,
 .allauth-form-inner-content input::placeholder {
@@ -255,7 +302,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
