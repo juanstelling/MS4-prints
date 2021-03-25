@@ -324,7 +324,7 @@ input[name='q']::placeholder {
         max-width: 80%;
     }
     .toast-container {
-        left: 17%;
+        left: 10%;
     }
     .list-group-item {
         padding: 0.5rem 0.3rem;

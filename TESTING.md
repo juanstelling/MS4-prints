@@ -247,11 +247,12 @@ The unit tests can be found in the apps in the `test_models.py`, `test_views.py`
     **Results:**
     - Warnings 
         - 'template literal syntax' is only available in ES6 (use 'esversion: 6')
+        - 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
     - Undefined variable: $
 
 - **[Python validator | PEP8](http://pep8online.com/):** No errors found
 
-![python validator](readme_img/testing/python-validator.png)
+    **Results:** No errors found!
 
 ---
 
