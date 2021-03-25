@@ -150,6 +150,10 @@ Click on the links below to see the mockups in Figma.
 |    :----:    |     :----:   |   
 |[PRNTS.](https://www.figma.com/file/5lzlSoiNpQmvPJJZQRbSC8/MS4-PRNTS.?node-id=33%3A0)|[PRNTS.](https://www.figma.com/file/5lzlSoiNpQmvPJJZQRbSC8/MS4-PRNTS.?node-id=0%3A1) | 
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
+
 <span id="information-architecture"></span>
 
 <h1>2. Information Architecture</h1>
@@ -165,7 +169,7 @@ Click on the links below to see the mockups in Figma.
 ### 2.2 Data Modelling
 
 #### 1. Profile app 
-#### Profile
+#### UserProfile model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
@@ -179,14 +183,14 @@ Click on the links below to see the mockups in Figma.
  Address address 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
 
 #### 2. Products app 
-#### Category
+#### Category model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
  name | name | CharField | max_length=254
  Friendly name | friendly_name | CharField | max_length=254, null=True, blank=True
 
- #### Product
+ #### Product model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
@@ -200,7 +204,7 @@ Click on the links below to see the mockups in Figma.
  In stock | in_stock | BooleanField | default=True
 
 #### 3. Checkout app 
-#### Order
+#### Order model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
@@ -221,7 +225,7 @@ Click on the links below to see the mockups in Figma.
  Original bag | original_bag | TextField | null=False, blank=False, default=''
  Stipe pid | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
 
- #### OrderLineItem
+ #### OrderLineItem model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
@@ -231,7 +235,7 @@ Click on the links below to see the mockups in Figma.
  Lineitem total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
 #### 4. Contact app 
-#### ContactMessage
+#### ContactMessage model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
@@ -240,12 +244,16 @@ Click on the links below to see the mockups in Figma.
  Message | message| TextField | 
 
 #### 5. Newsletter app 
-#### Subscribe
+#### Subscribe model
 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
  Email | email| EmailField | max_length=255
  Timestamp | timestamp | DateTimeField | auto_now_add=True
+
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
 
 <span id="features"></span>
 
@@ -376,6 +384,9 @@ The website is classified by 8 applications: home, about, products, checkout, pr
 - Greating a loyalty programme, where users can save points for discounts.
 - Expand the range where people can choose between different sizes. In addition, they calso can buy frames for the products.
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
 
 <span id="technologies"></span>
 
@@ -450,11 +461,19 @@ The website is classified by 8 applications: home, about, products, checkout, pr
 - [PEP8](http://pep8online.com/)
     - The PEP8 validator is used to check whether there were any errors in the Python code.
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
+
 <span id="testing"></span>
 
 <h1>5. Testing</h1>
 
 The testing process can be found [here](TESTING.md).
+
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
 
 <span id="deployment"></span>
 
@@ -569,6 +588,10 @@ Click on **Open app** in the right corner of your Heroku account. The app wil op
 The static and media files are hosted in the AWS S3 Bucket. To host them you will need an account and create an S3 bucket and set a group, policy and user in the IAM environment. 
 Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). For more information about the storage in your project [click here](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
+
 <span id="credits"></span>
 
 <h1>7. Credits</h1>
@@ -587,6 +610,9 @@ Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). Fo
 - [Stack Overflow](https://stackoverflow.com/) was helpful for little bugs or troubles in the code. 
 - [Mailchimp connection video](https://www.youtube.com/watch?v=2KeV42YaPes) helped me to place the MailChimp API in my project.
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
 
 <span id="Acknowledge"></span>
 
@@ -597,6 +623,9 @@ Thanks to the following people and organizations who helped or inspired me for t
 - The lessons and knowledge of [Code Institute.](https://codeinstitute.net/)
 - The advice about bugs from the Tutor Assistance of Code Institute.
 
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div> 
 <span id="Disclaimer"></span>
 
 <h1>9. Disclaimer</h1>
@@ -604,4 +633,6 @@ This project is for educational purposes only. If there is an issue with the cop
 
 Thanks for visiting
 
-<a href="#breaktasty">Back to top!</a>
+<div align="right">
+    <a href="#breaktasty">↥ Back to top!</a>
+</div>
