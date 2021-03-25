@@ -328,7 +328,7 @@ I used the automated tool Lighthouse to test the quality of the web pages.
 Testing is a big part that has to be done after you created the project. For in the future with more time and knowlegde I would like to impove testing and make the quality of the project better. 
 For in the future I would like to improve mostrly two things: 
 - I would like to improve the automated testing with testing the apps looking at `views`, `models`, and `forms'. My coverage at this moment is 41% and I would like to impove this to a minimum of 80%.
-- I would like to improve the results of the lighthouse scores. The performance score is 66 and I would like to improve that to a minimum score of 90. Therefore I have to dive into the requirements and improve these elements.
+- I would like to improve the results of the lighthouse scores, especially the performance score. The performance score is 66 and I would like to improve that to a minimum score of 90. Therefore I have to dive into the requirements and improve these elements.
 
 ---
 
