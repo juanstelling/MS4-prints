@@ -14,6 +14,7 @@
 - <a href="#browser-compatibility">5. Browser compability</a>
 - <a href="#other">6. Other</a>
 - <a href="#bugs">7. Bugs</a>
+- <a href="#future-testing">8. Future testing</a>
 
 ---
 
@@ -216,8 +217,20 @@
 
 ## 2. Automated testing
 
+### Testing apps
 Automated testing is used to support the manual testing. The manual testing helped by testing mostly the back-end code with views, models and forms.
 The unit tests can be found in the apps in the `test_models.py`, `test_views.py` and  `test_forms.py` files.
+
+The tests provide an overall coverage of 41%. For in the future with more time and knowledge about Django testing, I would like to improve the coverage to a minimum of 80%.
+
+### Lighthouse testing
+
+I used the automated tool Lighthouse to test the quality of the web pages. 
+
+**The result:** 
+![Lighthouse testing](readme_img/lighthouse.png)
+
+- Note: The performance is rated with a score of 61.
 
 
 <span id="validators"></span>
@@ -286,17 +299,31 @@ The unit tests can be found in the apps in the `test_models.py`, `test_views.py`
 
 ## 8. Other
 
+- During developing the website the debugger in `settings.py` was set to `debug=True`. The **debugger** showed errors and allowed me to find the errors quickly and to fix it.
+- Custom error pages for error 400, 403, 404 and 500 are showing up in the same design as the website. 
+- Url access/ security is test. The results: 
+    - Pages that not exists are headed to a 404 page. 
+    - Users who visit pages that require login while the user is not logged in will be directed to the login page.
+    - Users who want to visit superuser access pages are getting redirected to the login page.
+
 --- 
 
 <span id="bugs"></span>
 
-## 7. Bugs | Solved
-1. A bug was found by running the project. I just started the project and set everything in place, such as connecting to MongoDB, installed flask and made the env.py and setup for my app.py. I took after that a little break to celebrate christmas and new year, but when I opened the project I couldn't run the project and got an error by running the app.
-    - After my break from the project, I accidentally opened a new workspace on gitpod therefore my app wasn't running, because everything I installed with for example Flask wasn't pushed to GitHub. I have solved this by opening my old workspace and by pinning it. The rest of the project I runned in the same workspace, whereby everything worked fine.
-2. A bug was found by adding or editing a recipe the instructions input field came as an array in the database, instead of a string.
-    - I have solved this problem looking closely in my app.py. In the code by sending the instructions of the recipe to my database I had used the getlist() functionality, whereby the input as an array was saved. I removed the getlist() and the instructions where saved as a stirng. 
-3. A bug was found by making a modal the confirm the delete functionality. The modal worked, but deleted the wrong recipe (wrong id). The bug was caused by the modal of materialize. A modal was created for every recipe but every single modal has an identical id and every single delete button targets that one single id of modal.
-    - I have solved this problem by using loop indexing. The loop indexing creates a unique id for each model depending on it's index in the loop.
+## 7. Bugs 
+
+1. A bug was found in the interactive elements of the website. Certain elements didn't works especially collapse and dropdown elements.
+    - I checked the links of Bootstrap and found out that I was using two versions of Bootstrap (Version 4 and version 5) at the same time. That why some elements didn't interact on the website. I fixed this bug to change every element to Bootstrap 5. 
+2. A bug was found in with a unexpected 404 message on the products page in my 8000 port. 
+    - This problem sometimes occurs when I added a product to the cart and then delete the product from the database. This action causes my 404 error. I have solved this bug by opening the Dev Tools and cleaned the site data. 
+
+---
+
+<span id="future-testing"></span>
+
+## 8. Future testing 
+
+
 
 ---
 
