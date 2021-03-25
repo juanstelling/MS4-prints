@@ -228,10 +228,12 @@ The tests provide an overall coverage of 41%. For in the future with more time a
 I used the automated tool Lighthouse to test the quality of the web pages. 
 
 **The result:** 
-![Lighthouse testing](readme_img/lighthouse.png)
+![Lighthouse testing](readme_img/lighthouse-testing.png)
 
 - Note: The performance is rated with a score of 61.
-
+    - The Largest Contentful Paint is coloured red and takes the most seconds. This metrics marks the time at which the largest text or image is painted. The score of this is so hight because loading the images is very slow. 
+    - The images are the biggest issue. This has the most to do with the sizes of the original images. The original images are very different in size then on the website and the images are manipulated in a other size. Besides that the images don't have explicit width and height and the cache policy isn't effective.
+    - Other issues are sources that are blocking the view, primary tread operations.  
 
 <span id="validators"></span>
 
@@ -323,7 +325,10 @@ I used the automated tool Lighthouse to test the quality of the web pages.
 
 ## 8. Future testing 
 
-
+Testing is a big part that has to be done after you created the project. For in the future with more time and knowlegde I would like to impove testing and make the quality of the project better. 
+For in the future I would like to improve mostrly two things: 
+- I would like to improve the automated testing with testing the apps looking at `views`, `models`, and `forms'. My coverage at this moment is 41% and I would like to impove this to a minimum of 80%.
+- I would like to improve the results of the lighthouse scores. The performance score is 66 and I would like to improve that to a minimum score of 90. Therefore I have to dive into the requirements and improve these elements.
 
 ---
 
