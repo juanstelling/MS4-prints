@@ -87,31 +87,30 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
 2. As a visitor, I want to be able to navigate easily through the website, so I can find everything easily. 
 3. As a visitor, I want to access the social media accounts of the company, so I can follow them and see the latest trends and news. 
 4. As a visitor, I want to sign up for the newsletter, so I can be up to date about the latest news and trends. 
-5. As a visitor, I want to know more about the company, so I know what the company is about and see their mission and vision. 
-6. As a visitor, I want to be inspired by the company, so I can get ideas for my own decoration. 
-7. As a visitor, I want to be able to contact the owners of the website, so I can easily ask a question. 
-8. As a visitor, I want to see an overview of all the wall art, so I can see what the website is offering. 
-9. As a visitor, I want to be able to search and filter the wall art, so I can find specific wall art quick and easy.
-10. As a visitor, I want to be able to read more information about the wall art (size, price, image, description), so I can see if the product suits my preferences. 
+5. As a visitor, I want to know more about the company, so I know what the company is about.
+6. As a visitor, I want to be able to contact the owners of the website, so I can easily ask a question. 
+7. As a visitor, I want to see an overview of all the wall art, so I can see what the website is offering. 
+8. As a visitor, I want to be able to search and filter the wall art, so I can find specific wall art quick and easy.
+9. As a visitor, I want to be able to read more information about the wall art (size, price, image, description), so I can see if the product suits my preferences. 
 
 
 **Consumer goals:** 
 
-11. As a consumer, I want to add products to my basket, so I can buy products. 
-12. As a consumer, I want to modify my order, so I can make last changes before I order the products. 
-13. As a consumer, I want to be able to delete products in my order, so I can remove products that I no longer wish to purchase. 
-14. As a consumer, I want to see the total price and shipping costs of my order, so I can see how much I have spent in total. 
-15. As a consumer, I want to pay with a card in a safe and secure way, so I know that my payment goes well. 
-16. As a consumer, I want to receive a confirmation email of the order, so I know that the order is successfully received. 
-17. As a consumer, I want to create an account, so I can see my profile details and order history. 
-18. As a consumer, I want to know more about shipping, delivery, etc., so I know more about when and how my package arrives. 
-19. As a consumer, I want to know how I can return my package, so I know how I can return my packages if I want to. 
+10. As a consumer, I want to add products to my basket, so I can buy products. 
+11. As a consumer, I want to modify my order, so I can make last changes before I order the products. 
+12. As a consumer, I want to be able to delete products in my order, so I can remove products that I no longer wish to purchase. 
+13. As a consumer, I want to see the total price and shipping costs of my order, so I can see how much I have spent in total. 
+14. As a consumer, I want to pay with a card in a safe and secure way, so I know that my payment goes well. 
+15. As a consumer, I want to receive a confirmation email of the order, so I know that the order is successfully received. 
+16. As a consumer, I want to create an account, so I can see my profile details and order history. 
+17. As a consumer, I want to know more about shipping, delivery, etc., so I know more about when and how my package arrives. 
+18. As a consumer, I want to know how I can return my package, so I know how I can return my packages if I want to. 
 
 **Returning consumer goals:** 
 
-20. As a returning consumer, I want to login and logout at my account anytime, so I can make an order quickly and so I can see my order history. 
-21. As a returning consumer, I want to reset/change my password (if I forgot it), so I can get access to my profile. 
-22. As a returning consumer, I want to be able to change my email, so I can have access to the profile with another email address. 
+19. As a returning consumer, I want to login and logout at my account anytime, so I can make an order quickly and so I can see my order history. 
+20. As a returning consumer, I want to reset/change my password (if I forgot it), so I can get access to my profile. 
+21. As a returning consumer, I want to be able to change my email, so I can have access to the profile with another email address. 
 
 **Admin goals:** 
 
