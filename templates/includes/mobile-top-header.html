@@ -1,16 +1,16 @@
 <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="list-unstyled">
+        <ul class="list-group list-group-horizontal list-unstyled">
             <!-- Logo -->
-            <li class="list-inline-item">
-                <a href="{% url 'home' %}" class="text-uppercase text-black nav-link d-block d-lg-none"><h4>prnts</h4></a>
+            <li class="list-group-item border-0 d-block d-lg-none">
+                <a href="{% url 'home' %}" class="text-uppercase text-black nav-link"><h4>prnts</h4></a>
             </li>
             <!-- Search bar -->
-            <li class="list-inline-item d-block d-lg-none">
+            <li class="list-group-item border-0 d-block d-lg-none">
                 <form method="GET" action="{% url 'products' %}">
                     <input class="searchbar" type="text" name="q" placeholder="Search">
                     <button class="searchbutton">
@@ -19,7 +19,7 @@
                 </form>
             </li>
             <!-- Account -->
-            <li class="list-inline-item dropdown">
+            <li class="list-group-item border-0 dropdown">
                     <a class="text-black nav-link d-block d-lg-none" href="#" role="button" id="account-dropdown-mob" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <div class="icons">
@@ -40,7 +40,7 @@
                     </div>
                 </li>
             <!-- Shopping bag -->
-            <li class="list-inline-item">
+            <li class="list-group-item border-0">
                 <a class="nav-link text-black d-block d-lg-none" href="{% url 'view_bag' %}">
                     <div class="icons">
                         <i class="fas fa-shopping-bag fa-lg"></i>

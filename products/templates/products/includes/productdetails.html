@@ -5,7 +5,7 @@
 </div>
 <div class="row px-3 pb-2">
     <div class="col">
-        <a class="text-black" href="{% url 'products' %}"><h6>< Go back to all prints</h6></a>
+        <a class="text-black" href="{% url 'products' %}"><h6>Go back to all prints</h6></a>
     </div>
 </div>
 <div class="row pb-4 px-3">
@@ -29,7 +29,7 @@
         {% endif %}
         <!-- Editing and deleting product -->
         {% if request.user.is_superuser %}
-            <p>
+            <div>
                 <a class="text-decoration-none text-uppercase" href="{% url 'edit_product' product.id %}">Edit</a> |
                 <button type="button" class="btn btn-modal text-uppercase text-danger" data-bs-toggle="modal" data-bs-target="#deleteproduct">
                     Delete
@@ -43,14 +43,14 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-modal" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-modal">
+                                <div class="btn btn-black">
                                     <a class="text-decoration-none text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </p>
+            </div>
         {% endif %}
         <h3 class="py-4">${{ product.price }}</h3> 
         <!-- Add to shopping bag button -->

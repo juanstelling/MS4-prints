@@ -224,21 +224,30 @@ The unit tests can be found in the apps in the `test_models.py`, `test_views.py`
 
 ## 3. Validators
 
- - **[HTML Validator](https://validator.w3.org/):** No errors to show.
+ - **[HTML Validator](https://validator.w3.org/):** No big errors to show.
     - I tested the HTML code by running my server locally and used view page source. This code I passed through the validator.
 
     **The following errors/warnings are showing**
     - Error Stray start tag tr, th and td: This error point to the newsletter form. The tr, th and td are automatically placed in the code from the `{{ form }}`.
     - Error Diplicate attribute name: This error point to the newsletter form. The name is double and is automatically set by `{{ form }}`.
+    - Warning: the type attribute is unnecessary for JavaScript resource.
+
+    **Result:** De rest of the code passed and there where no errors.
+
+- **[CSS Validator](https://jigsaw.w3.org/css-validator/):** No big errors found.
+
+    **Results:**
+    - base.css: 1 error was found: .btt-button: invalid number: padding-right. The input for padding-right is: `calc(var(--bs-gutter-x)/ 2)`. I think this error occurs because I used the calc method.
+    - checkout.css: no errors found
+    - profiles.css: no errors found
 
 
-
-- **[CSS Validator](https://jigsaw.w3.org/css-validator/):** No errors found.
-![CSS Validator](readme_img/testing/css-validator.png)
-
-- **[JS Hint](https://jshint.com/):** No errors found, two warnings, one undefined variable 
-    - 2 warnings consist the notification: 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-    - 1 undefined variable: $
+- **[JS Hint](https://jshint.com/):** No errors found.
+    
+    **Results:**
+    - Warnings 
+        - 'template literal syntax' is only available in ES6 (use 'esversion: 6')
+    - Undefined variable: $
 
 - **[Python validator | PEP8](http://pep8online.com/):** No errors found
 
