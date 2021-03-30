@@ -596,10 +596,10 @@ Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). Fo
 <h1>7. Credits</h1>
 
 #### Content
-- The content of the product and sustainability section on the about page is coming from Desenio. 
-- The content of the sustainability page is partly coming from Desenio. 
-- The content of the FAQ page is coming from Na-kd and Thinks I love Things I like 
-- The content of the return policy is coming from Na-kd
+- The content of the product and sustainability section on the about page is coming from [Desenio](https://desenio.co.uk/). 
+- The content of the sustainability page is partly coming from [Desenio](https://desenio.co.uk/). 
+- The content of the FAQ page is coming from Na-kd [Na-kd](https://www.na-kd.com/en) and [Things I like Things I love](https://www.thingsilikethingsilove.com/).
+- The content of the return policy is coming from Na-kd [Na-kd](https://www.na-kd.com/en)
 
 #### Media 
 - All images are from [Pexels](https://www.pexels.com).
