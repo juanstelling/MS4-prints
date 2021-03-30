@@ -14,6 +14,8 @@ def contact(request):
             messages.info(
                 request, 'Your message is send. '
                 + 'We will reply within 48 hours!')
+        else:
+            messages.error(request, 'Please try again.')
         return redirect(reverse('contact'))
     else:
         form = ContactForm()
