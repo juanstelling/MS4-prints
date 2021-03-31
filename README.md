@@ -617,6 +617,7 @@ Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). Fo
 - The code for the project is partly from the video lessions of the Boutique Ado project of [Code Institute](https://codeinstitute.net/). 
 - [Stack Overflow](https://stackoverflow.com/) was helpful for little bugs or troubles in the code. 
 - [Mailchimp connection video](https://www.youtube.com/watch?v=2KeV42YaPes) helped me to place the MailChimp API in my project.
+- [How to make a form field numeric only in Django](https://stackoverflow.com/questions/19022511/how-to-make-a-form-field-numeric-only-in-django)
 
 <div align="right">
     <a href="#breaktasty">↥ Back to top!</a>
