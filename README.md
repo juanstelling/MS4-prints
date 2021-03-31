@@ -25,8 +25,9 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
     - <a href="#ux-design">1.6 Design</a>
     - <a href="#ux-mockup">1.7 Mockup designs</a>
 - <a href="#information-architecture">2. Information Architecture</a>
-    - <a href="#database">2.1 Database</a>   
-    - <a href="#data-modelling">2.2 Data Modelling</a>
+    - <a href="#database">2.1 Database</a> 
+    - <a href="#er-diagram">2.2 ER Diagram </a>  
+    - <a href="#data-modelling">2.3 Data Modelling</a>
 - <a href="#features">3. Features</a>
     - <a href="#features-existing">3.1 Existing features</a>
     - <a href="#features-future">3.2 Features left to implement in the future</a>
@@ -163,6 +164,13 @@ Click on the links below to see the mockups in Figma.
 - During the development phase I have worked with the **sqlite3** database, which was set by default by Django. 
 - For deployment, I used the **PostgreSQL** database whcih is provided by Heroku. 
 
+<span id="er-diagram"></span>
+
+### 2.2 ER Diagram
+
+![ER Diagram](readme_img/er-diagram.png)
+
+
 <span id="data-modelling"></span>
 
 ### 2.2 Data Modelling
@@ -178,8 +186,8 @@ Click on the links below to see the mockups in Figma.
  Country | profile_country | CountryField | blank_label='Country', null=True, blank=True
  Postcode | profile_postcode | CharField | max_length=20, null=True, blank=True
  Town/City | default_town_or_city | Charfield | max_length=40, null=True, blank=True
- Address address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
- Address address 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
+ Street address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+ Street address 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
 
 #### 2. Products app 
 #### Category model
@@ -215,8 +223,8 @@ Click on the links below to see the mockups in Figma.
  Country| country | CountryField | blank_label='Country *', null=False, blank=False
  Postcode | postcode| CharField | max_length=20, null=True, blank=True
  Town/City | town_or_city | CharField | max_length=40, null=True, blank=True
- Address address 1 | street_address1 | CharField | max_length=80, null=True, blank=True
- Address address 2 | street_address2 | CharField | max_length=80, null=True, blank=True
+ Street address 1 | street_address1 | CharField | max_length=80, null=True, blank=True
+ Street address 2 | street_address2 | CharField | max_length=80, null=True, blank=True
  Date | date | DateTimeField | auto_now_add=True
  Delivery cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
  Order total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
@@ -382,6 +390,7 @@ The website is classified by 8 applications: home, about, products, checkout, pr
 - Logging in with social media account, such as Facebook and Google.
 - Greating a loyalty programme, where users can save points for discounts.
 - Expand the range where people can choose between different sizes. In addition, they calso can buy frames for the products.
+- Adding an address finder where the address finder can check if the address is valid and exists.
 
 <div align="right">
     <a href="#breaktasty">↥ Back to top!</a>
