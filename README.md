@@ -10,7 +10,6 @@ PRNTS. offers different pieces of wall art in different designs. We offer inspir
 
 This project is the fourth out of four Milestone Projects in the Full Stack Web Development Program I am attending at The Code Institute. 
 
-**[View the live project here.](https://ms4-prnts.herokuapp.com/)**
 
 ---
 
